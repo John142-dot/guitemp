@@ -1,0 +1,532 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UITemplates = Instance.new("ScreenGui")
+local Holder = Instance.new("Frame")
+local Modern = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Subtext = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local MainText = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Text = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UIGridLayout = Instance.new("UIGridLayout")
+local ModernV2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Subtext_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local Frame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Subtext_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local Subtext_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local Simple = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local ColourHolders = Instance.new("Frame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local Red = Instance.new("Frame")
+local Blue = Instance.new("Frame")
+local Green = Instance.new("Frame")
+local Purple = Instance.new("Frame")
+local Orange = Instance.new("Frame")
+local DarkerBlue = Instance.new("Frame")
+local Moving = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Rainbow = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local Main = Instance.new("TextLabel")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local Faded = Instance.new("Frame")
+local Subtext_5 = Instance.new("TextLabel")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local MainText_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local Text_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_6 = Instance.new("UICorner")
+local DarkMode = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local MainText_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local UIGradient_3 = Instance.new("UIGradient")
+local Example = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local Text2 = Instance.new("TextLabel")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local Text3 = Instance.new("TextLabel")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+UITemplates.Name = "UI Templates"
+UITemplates.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UITemplates.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Holder.Name = "Holder"
+Holder.Parent = UITemplates
+Holder.AnchorPoint = Vector2.new(0.5, 0.5)
+Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Holder.BackgroundTransparency = 1.000
+Holder.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Holder.Position = UDim2.new(0.5, 0, 0.5, 0)
+Holder.Size = UDim2.new(0.871461332, 0, 0.834146321, 0)
+Holder.ZIndex = 0
+
+Modern.Name = "Modern"
+Modern.Parent = Holder
+Modern.AnchorPoint = Vector2.new(0.5, 0.5)
+Modern.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Modern.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Modern.Position = UDim2.new(0.135777548, 0, 0.127653658, 0)
+Modern.Size = UDim2.new(0.268999994, 0, 0.25, 0)
+
+UICorner.CornerRadius = UDim.new(0.150000006, 0)
+UICorner.Parent = Modern
+
+Subtext.Name = "Subtext"
+Subtext.Parent = Modern
+Subtext.AnchorPoint = Vector2.new(0.5, 0.5)
+Subtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Subtext.BackgroundTransparency = 1.000
+Subtext.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Subtext.Position = UDim2.new(0.49884057, 0, 0.237755835, 0)
+Subtext.Size = UDim2.new(0.791235507, 0, 0.31219542, 0)
+Subtext.Font = Enum.Font.GothamBold
+Subtext.Text = "OnlyTwentyCharacters"
+Subtext.TextColor3 = Color3.fromRGB(132, 132, 132)
+Subtext.TextScaled = true
+Subtext.TextSize = 20.000
+Subtext.TextWrapped = true
+
+UITextSizeConstraint.Parent = Subtext
+UITextSizeConstraint.MaxTextSize = 20
+
+MainText.Name = "MainText"
+MainText.Parent = Modern
+MainText.AnchorPoint = Vector2.new(0.5, 0.5)
+MainText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainText.BackgroundTransparency = 1.000
+MainText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainText.Position = UDim2.new(0.497671992, 0, 0.5, 0)
+MainText.Size = UDim2.new(0.969498098, 0, 0.31219542, 0)
+MainText.Font = Enum.Font.GothamBold
+MainText.Text = "OnlyTwentyCharacters"
+MainText.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainText.TextScaled = true
+MainText.TextSize = 30.000
+MainText.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = MainText
+UITextSizeConstraint_2.MaxTextSize = 30
+
+Text.Name = "Text"
+Text.Parent = Modern
+Text.AnchorPoint = Vector2.new(0.5, 0.5)
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Text.Position = UDim2.new(0.497070909, 0, 0.737755954, 0)
+Text.Size = UDim2.new(0.516023159, 0, 0.174829438, 0)
+Text.Font = Enum.Font.GothamBold
+Text.Text = "OnlyTwentyCharacters"
+Text.TextColor3 = Color3.fromRGB(181, 181, 181)
+Text.TextScaled = true
+Text.TextSize = 10.000
+Text.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = Text
+UITextSizeConstraint_3.MaxTextSize = 10
+
+UIGridLayout.Parent = Holder
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIGridLayout.CellPadding = UDim2.new(0.00999999978, 0, 0.00999999978, 0)
+UIGridLayout.CellSize = UDim2.new(0.268999994, 0, 0.25, 0)
+
+ModernV2.Name = "ModernV2"
+ModernV2.Parent = Holder
+ModernV2.AnchorPoint = Vector2.new(0.5, 0.5)
+ModernV2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ModernV2.BackgroundTransparency = 0.250
+ModernV2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ModernV2.Position = UDim2.new(0.135777548, 0, 0.127653658, 0)
+ModernV2.Size = UDim2.new(0.268999994, 0, 0.25, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.0199999996, 0)
+UICorner_2.Parent = ModernV2
+
+Subtext_2.Name = "Subtext"
+Subtext_2.Parent = ModernV2
+Subtext_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Subtext_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Subtext_2.BackgroundTransparency = 1.000
+Subtext_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Subtext_2.Position = UDim2.new(0.442547143, 0, 0.237755835, 0)
+Subtext_2.Size = UDim2.new(0.791235507, 0, 0.31219542, 0)
+Subtext_2.Font = Enum.Font.GothamBold
+Subtext_2.Text = "OnlyTwentyCharacters"
+Subtext_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Subtext_2.TextScaled = true
+Subtext_2.TextSize = 20.000
+Subtext_2.TextWrapped = true
+Subtext_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_4.Parent = Subtext_2
+UITextSizeConstraint_4.MaxTextSize = 20
+
+Frame.Parent = ModernV2
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BackgroundTransparency = 0.500
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(0.499447912, 0, 0.735486746, 0)
+Frame.Size = UDim2.new(0.813127398, 0, 0.280975878, 0)
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = Frame
+
+Subtext_3.Name = "Subtext"
+Subtext_3.Parent = Frame
+Subtext_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Subtext_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Subtext_3.BackgroundTransparency = 1.000
+Subtext_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Subtext_3.Position = UDim2.new(0.500173748, 0, 0.499430329, 0)
+Subtext_3.Size = UDim2.new(0.94615382, 0, 0.666666687, 0)
+Subtext_3.Font = Enum.Font.GothamBold
+Subtext_3.Text = "OnlyTwentyCharacters"
+Subtext_3.TextColor3 = Color3.fromRGB(178, 178, 178)
+Subtext_3.TextScaled = true
+Subtext_3.TextSize = 10.000
+Subtext_3.TextWrapped = true
+Subtext_3.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_5.Parent = Subtext_3
+UITextSizeConstraint_5.MaxTextSize = 10
+
+Subtext_4.Name = "Subtext"
+Subtext_4.Parent = ModernV2
+Subtext_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Subtext_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Subtext_4.BackgroundTransparency = 1.000
+Subtext_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Subtext_4.Position = UDim2.new(0.442547083, 0, 0.432763636, 0)
+Subtext_4.Size = UDim2.new(0.791235507, 0, 0.187317252, 0)
+Subtext_4.Font = Enum.Font.GothamBold
+Subtext_4.Text = "OnlyTwentyCharacters"
+Subtext_4.TextColor3 = Color3.fromRGB(108, 108, 108)
+Subtext_4.TextScaled = true
+Subtext_4.TextSize = 15.000
+Subtext_4.TextWrapped = true
+Subtext_4.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_6.Parent = Subtext_4
+UITextSizeConstraint_6.MaxTextSize = 15
+
+Simple.Name = "Simple"
+Simple.Parent = Holder
+Simple.AnchorPoint = Vector2.new(0.5, 0.5)
+Simple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Simple.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Simple.Position = UDim2.new(0.135777548, 0, 0.127653658, 0)
+Simple.Size = UDim2.new(0.268999994, 0, 0.25, 0)
+
+UICorner_4.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_4.Parent = Simple
+
+TextLabel.Parent = Simple
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.383779436, 0, 0.15609771, 0)
+TextLabel.Size = UDim2.new(0.766216218, 0, 0.31219542, 0)
+TextLabel.ZIndex = 5
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "OnlyTwentyCharacters"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 20.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint_7.Parent = TextLabel
+UITextSizeConstraint_7.MaxTextSize = 20
+
+ColourHolders.Name = "ColourHolders"
+ColourHolders.Parent = Simple
+ColourHolders.AnchorPoint = Vector2.new(0.5, 0.5)
+ColourHolders.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ColourHolders.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ColourHolders.BorderSizePixel = 0
+ColourHolders.Position = UDim2.new(0.499135077, 0, 0.634160161, 0)
+ColourHolders.Size = UDim2.new(0.813127398, 0, 0.730537295, 0)
+
+UIGridLayout_2.Parent = ColourHolders
+UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+UIGridLayout_2.CellSize = UDim2.new(0.135000005, 0, 0.298999995, 0)
+
+Red.Name = "Red"
+Red.Parent = ColourHolders
+Red.AnchorPoint = Vector2.new(0.5, 0.5)
+Red.BackgroundColor3 = Color3.fromRGB(253, 117, 125)
+Red.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Red.BorderSizePixel = 0
+Red.Size = UDim2.new(0.135000005, 0, 0.298999995, 0)
+
+Blue.Name = "Blue"
+Blue.Parent = ColourHolders
+Blue.AnchorPoint = Vector2.new(0.5, 0.5)
+Blue.BackgroundColor3 = Color3.fromRGB(68, 183, 255)
+Blue.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Blue.BorderSizePixel = 0
+Blue.Size = UDim2.new(0.135000005, 0, 0.298999995, 0)
+
+Green.Name = "Green"
+Green.Parent = ColourHolders
+Green.AnchorPoint = Vector2.new(0.5, 0.5)
+Green.BackgroundColor3 = Color3.fromRGB(90, 255, 143)
+Green.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Green.BorderSizePixel = 0
+Green.Size = UDim2.new(0.135000005, 0, 0.298999995, 0)
+
+Purple.Name = "Purple"
+Purple.Parent = ColourHolders
+Purple.AnchorPoint = Vector2.new(0.5, 0.5)
+Purple.BackgroundColor3 = Color3.fromRGB(204, 142, 255)
+Purple.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Purple.BorderSizePixel = 0
+Purple.Size = UDim2.new(0.135000005, 0, 0.298999995, 0)
+
+Orange.Name = "Orange"
+Orange.Parent = ColourHolders
+Orange.AnchorPoint = Vector2.new(0.5, 0.5)
+Orange.BackgroundColor3 = Color3.fromRGB(254, 163, 83)
+Orange.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Orange.BorderSizePixel = 0
+Orange.Size = UDim2.new(0.135000005, 0, 0.298999995, 0)
+
+DarkerBlue.Name = "DarkerBlue"
+DarkerBlue.Parent = ColourHolders
+DarkerBlue.AnchorPoint = Vector2.new(0.5, 0.5)
+DarkerBlue.BackgroundColor3 = Color3.fromRGB(43, 115, 255)
+DarkerBlue.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DarkerBlue.BorderSizePixel = 0
+DarkerBlue.Size = UDim2.new(0.135000005, 0, 0.298999995, 0)
+
+Moving.Name = "Moving"
+Moving.Parent = Holder
+Moving.AnchorPoint = Vector2.new(0.5, 0.5)
+Moving.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Moving.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Moving.Position = UDim2.new(0.135777548, 0, 0.127653658, 0)
+Moving.Size = UDim2.new(0.268999994, 0, 0.25, 0)
+
+UICorner_5.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_5.Parent = Moving
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = Moving
+Rainbow.AnchorPoint = Vector2.new(0.5, 0.5)
+Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.BackgroundTransparency = 1.000
+Rainbow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Rainbow.Position = UDim2.new(0.497474432, 0, 0.656097829, 0)
+Rainbow.Size = UDim2.new(0.878803074, 0, 0.31219542, 0)
+Rainbow.Font = Enum.Font.GothamBold
+Rainbow.Text = "OnlyTwentyCharacters"
+Rainbow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.TextScaled = true
+Rainbow.TextSize = 25.000
+Rainbow.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(251, 71, 62)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(252, 147, 59)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(254, 237, 67)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(67, 255, 101)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(37, 168, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(101, 0, 254))}
+UIGradient.Rotation = 1
+UIGradient.Parent = Rainbow
+
+UITextSizeConstraint_8.Parent = Rainbow
+UITextSizeConstraint_8.MaxTextSize = 25
+
+Main.Name = "Main"
+Main.Parent = Moving
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.Position = UDim2.new(0.499325991, 0, 0.343902379, 0)
+Main.Size = UDim2.new(1.00077224, 0, 0.31219542, 0)
+Main.Font = Enum.Font.GothamBold
+Main.Text = "OnlyTwentyCharacters"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 30.000
+Main.TextWrapped = true
+
+UITextSizeConstraint_9.Parent = Main
+UITextSizeConstraint_9.MaxTextSize = 30
+
+Faded.Name = "Faded"
+Faded.Parent = Holder
+Faded.AnchorPoint = Vector2.new(0.5, 0.5)
+Faded.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Faded.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Faded.BorderSizePixel = 0
+Faded.Position = UDim2.new(0.135777548, 0, 0.127653658, 0)
+Faded.Size = UDim2.new(0.268999994, 0, 0.25, 0)
+
+Subtext_5.Name = "Subtext"
+Subtext_5.Parent = Faded
+Subtext_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Subtext_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Subtext_5.BackgroundTransparency = 1.000
+Subtext_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Subtext_5.Position = UDim2.new(0.49884057, 0, 0.237755835, 0)
+Subtext_5.Size = UDim2.new(0.791235507, 0, 0.31219542, 0)
+Subtext_5.Font = Enum.Font.GothamBold
+Subtext_5.Text = "OnlyTwentyCharacters"
+Subtext_5.TextColor3 = Color3.fromRGB(207, 207, 207)
+Subtext_5.TextScaled = true
+Subtext_5.TextSize = 20.000
+Subtext_5.TextWrapped = true
+
+UITextSizeConstraint_10.Parent = Subtext_5
+UITextSizeConstraint_10.MaxTextSize = 20
+
+MainText_2.Name = "MainText"
+MainText_2.Parent = Faded
+MainText_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainText_2.BackgroundTransparency = 1.000
+MainText_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainText_2.Position = UDim2.new(0.497671992, 0, 0.5, 0)
+MainText_2.Size = UDim2.new(0.969498098, 0, 0.31219542, 0)
+MainText_2.Font = Enum.Font.GothamBold
+MainText_2.Text = "OnlyTwentyCharacters"
+MainText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainText_2.TextScaled = true
+MainText_2.TextSize = 30.000
+MainText_2.TextWrapped = true
+
+UITextSizeConstraint_11.Parent = MainText_2
+UITextSizeConstraint_11.MaxTextSize = 30
+
+Text_2.Name = "Text"
+Text_2.Parent = Faded
+Text_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BackgroundTransparency = 1.000
+Text_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Text_2.Position = UDim2.new(0.497070909, 0, 0.737755954, 0)
+Text_2.Size = UDim2.new(0.516023159, 0, 0.174829438, 0)
+Text_2.Font = Enum.Font.GothamBold
+Text_2.Text = "OnlyTwentyCharacters"
+Text_2.TextColor3 = Color3.fromRGB(233, 233, 233)
+Text_2.TextScaled = true
+Text_2.TextSize = 10.000
+Text_2.TextWrapped = true
+
+UITextSizeConstraint_12.Parent = Text_2
+UITextSizeConstraint_12.MaxTextSize = 10
+
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+UIGradient_2.Parent = Faded
+
+UICorner_6.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_6.Parent = Faded
+
+DarkMode.Name = "DarkMode"
+DarkMode.Parent = Holder
+DarkMode.AnchorPoint = Vector2.new(0.5, 0.5)
+DarkMode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkMode.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DarkMode.Position = UDim2.new(0.135777548, 0, 0.127653658, 0)
+DarkMode.Size = UDim2.new(0.268999994, 0, 0.25, 0)
+
+UICorner_7.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_7.Parent = DarkMode
+
+MainText_3.Name = "MainText"
+MainText_3.Parent = DarkMode
+MainText_3.AnchorPoint = Vector2.new(0.5, 0.5)
+MainText_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainText_3.BackgroundTransparency = 1.000
+MainText_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MainText_3.Position = UDim2.new(0.49716419, 0, 0.231512025, 0)
+MainText_3.Size = UDim2.new(0.813127398, 0, 0.31219542, 0)
+MainText_3.Font = Enum.Font.GothamBold
+MainText_3.Text = "OnlyTwentyCharacters"
+MainText_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainText_3.TextScaled = true
+MainText_3.TextSize = 25.000
+MainText_3.TextWrapped = true
+MainText_3.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_13.Parent = MainText_3
+UITextSizeConstraint_13.MaxTextSize = 25
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(22, 23, 27)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(52, 57, 62))}
+UIGradient_3.Rotation = -90
+UIGradient_3.Parent = DarkMode
+
+Example.Name = "Example"
+Example.Parent = DarkMode
+Example.AnchorPoint = Vector2.new(0.5, 0.5)
+Example.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Example.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Example.Position = UDim2.new(0.844737291, 0, 0.499512672, 0)
+Example.Size = UDim2.new(0.156370655, 0, 0.31219542, 0)
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = Example
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(3, 100, 170)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(2, 163, 245))}
+UIGradient_4.Parent = Example
+
+Text2.Name = "Text2"
+Text2.Parent = DarkMode
+Text2.AnchorPoint = Vector2.new(0.5, 0.5)
+Text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text2.BackgroundTransparency = 1.000
+Text2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Text2.Position = UDim2.new(0.49716422, 0, 0.500000119, 0)
+Text2.Size = UDim2.new(0.813127398, 0, 0.162341624, 0)
+Text2.Font = Enum.Font.GothamBold
+Text2.Text = "OnlyTwentyCharacters"
+Text2.TextColor3 = Color3.fromRGB(115, 119, 123)
+Text2.TextScaled = true
+Text2.TextSize = 15.000
+Text2.TextWrapped = true
+Text2.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_14.Parent = Text2
+UITextSizeConstraint_14.MaxTextSize = 15
+
+Text3.Name = "Text3"
+Text3.Parent = DarkMode
+Text3.AnchorPoint = Vector2.new(0.5, 0.5)
+Text3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text3.BackgroundTransparency = 1.000
+Text3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Text3.Position = UDim2.new(0.49716422, 0, 0.737268627, 0)
+Text3.Size = UDim2.new(0.813127398, 0, 0.162341624, 0)
+Text3.Font = Enum.Font.GothamBold
+Text3.Text = "OnlyTwentyCharacters"
+Text3.TextColor3 = Color3.fromRGB(124, 124, 127)
+Text3.TextScaled = true
+Text3.TextSize = 10.000
+Text3.TextWrapped = true
+Text3.TextXAlignment = Enum.TextXAlignment.Left
+
+UITextSizeConstraint_15.Parent = Text3
+UITextSizeConstraint_15.MaxTextSize = 10
